@@ -1,0 +1,68 @@
+
+$screen-xs: 		320px;
+$screen-sm: 		480px;
+$screen-md: 		640px;
+$screen-lg: 		800px;
+$screen-xl: 		960px;
+
+$font-family-sans-serif:  	Gill Sans,Gill Sans MT,Calibri,sans-serif;
+$font-family-serif: 		Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+$font-size-base: 			18px; 					
+$font-size-h1:				30px;
+$font-size-h2:				$font-size-h1/1.125;
+$font-size-h3:				$font-size-h2/1.4;
+
+/*$base-white: 			#fff;
+$base-black: 			#000; /* base colours are useful when using lighten/darken etc *!/
+
+$teal-1: 		#60B3AD; /* teal-blue bg *!/
+$teal-2: 		#184945; /* teal-blue text *!/*/
+
+$spacing: 			15px;
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+  	-moz-transition: $args;
+  	-ms-transition: $args;
+  	-o-transition: $args;
+  	transition: $args;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+}
+
+@mixin flexbox() {
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-flex-direction: row;
+  	-ms-flex-direction: row;
+  	flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+
+@mixin flexbox-child() {
+ 	-webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}

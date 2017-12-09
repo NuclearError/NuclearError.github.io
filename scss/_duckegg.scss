@@ -1,0 +1,26 @@
+$blue: 			#94CAC8; /* duck-egg blue text */
+$brown:      	#362813; /* chocolate brown bg */
+
+$color-mix: 		mix($base-black, $blue, 75%);
+$color-mix-light: 	mix($base-white, $color-mix, 10%);
+$link-color: 		saturate($color-mix-light, 50%);
+
+html {
+	background: $color-mix url('../img/duckegg.png') repeat left top;
+}
+
+.container {
+	color: $brown;
+	background-color: $blue;
+}
+
+.contact .url {
+	color: $brown;
+	&:hover,&:focus,&:active {
+		color: $link-color;
+	}
+}
+
+details[open] summary:after {
+	color: $link-color;
+}
