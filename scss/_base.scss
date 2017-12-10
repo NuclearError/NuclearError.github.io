@@ -7,7 +7,7 @@ html, body {
 }
 
 .container {
-	padding: $spacing $spacing $spacing*2;
+	padding: $spacing $spacing $spacing*1.5;
 }
 
 h1, h2, h3, h4 {
@@ -71,6 +71,11 @@ details[open] summary:after {
 	word-wrap: break-word;
 }
 
+.about-detail {
+	margin: $spacing/2 0 0;
+	padding: 0 $spacing $spacing;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -107,13 +112,13 @@ ul {
 }
 
 @font-face {
-  // font-family: 'fontello';
-  // src: url('../font/fontello.eot?42380986');
-  // src: url('../font/fontello.eot?42380986#iefix') format('embedded-opentype'),
-  //      url('../font/fontello.woff2?42380986') format('woff2'),
-  //      url('../font/fontello.woff?42380986') format('woff'),
-  //      url('../font/fontello.ttf?42380986') format('truetype'),
-  //      url('../font/fontello.svg?42380986#fontello') format('svg');
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?42380986');
+  src: url('../font/fontello.eot?42380986#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?42380986') format('woff2'),
+       url('../font/fontello.woff?42380986') format('woff'),
+       url('../font/fontello.ttf?42380986') format('truetype'),
+       url('../font/fontello.svg?42380986#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
