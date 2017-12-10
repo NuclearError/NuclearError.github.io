@@ -8,21 +8,20 @@ $purple: 				#2b0000;
 $cyan: 					#00f8fb;
 $light-cyan: 		#c5eff7;
 
-/*$color-mix: 		mix($base-black, $blue, 75%);
-$color-mix-light: 	mix($base-white, $color-mix, 10%);*/
-$link-color: 		mix($base-white, $purple, 20%);
+$text-color: 		$base-black;
+$link-color: 		$purple;
 
 html {
 	background: pink;
 }
 
 .container {
-	color: $base-black;
+	color: $text-color;
 	background-color: $pink;
 }
 
 .contact .url {
-	color: $base-black;
+	color: $text-color;
 	&:hover,&:focus,&:active {
 		color: $link-color;
 	}
