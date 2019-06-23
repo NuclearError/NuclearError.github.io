@@ -20,4 +20,4 @@ gulp.task('watchFiles', function() {
 });
 
 // Gulp Tasks
-gulp.task('default', ['compileCSS', 'watchFiles']);
+gulp.task('default', gulp.series('compileCSS', 'watchFiles'));
