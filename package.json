@@ -1,6 +1,7 @@
 {
   "name": "AngelaCullen.com",
   "version": "2.0.0",
+  "homepage": "http://NuclearError.github.io/index.html",
   "main": "index.html",
   "dependencies": {
     "react": "^16.8.6",
