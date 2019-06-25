@@ -18,7 +18,7 @@
 
   display: inline-block;
   text-decoration: inherit;
-  width: $font-size-h1;
+  width: 30px;
   text-align: center;
 
   /* For safety - reset parent styles, that can break glyph codes*/
