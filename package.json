@@ -10,11 +10,14 @@
   },
   "devDependencies": {
     "@emotion/core": "^10.0.10",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
