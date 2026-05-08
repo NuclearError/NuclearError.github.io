@@ -8,8 +8,12 @@ body {
   padding: 0;
   font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: normal;
   background-color: var(--pink);
+
+  @media (min-width: 640px) {
+    font-weight: lighter;
+  }
 }
 
 /* ── Layout ──────────────────────────────────────────── */
@@ -49,9 +53,16 @@ body {
   }
 
   & h3 {
-    font-size: 19px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 44px;
+
+    @media (min-width: 640px) {
+      font-size: 19px;
+      line-height: 40px;
+    }
   }
+
+
 }
 
 /* ── Contact links ───────────────────────────────────── */
@@ -69,16 +80,16 @@ body {
     }
   }
 
+  & [class^="icon-"]:before,
+  & [class*=" icon-"]:before {
+    margin-right: 15px;
+  }
+
   @media (min-width: 480px) {
     padding: 7.5px 0;
 
     & li {
       display: block;
-    }
-
-    & [class^="icon-"]:before,
-    & [class*=" icon-"]:before {
-      margin-right: 15px;
     }
   }
 
@@ -153,12 +164,15 @@ body {
     }
 
     & .title {
-      vertical-align: top;
-      position: absolute;
-      line-height: 22px;
+      font-size: 26px;
+      line-height: 40px;
+      vertical-align: middle;
 
       @media (min-width: 480px) {
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 22px;
+        vertical-align: middle;
+        position: absolute;
       }
     }
 
