@@ -1,4 +1,4 @@
-www.angelacullen.com
+## www.angelacullen.com
 
 ---
 
@@ -34,6 +34,7 @@ I used Claude's Sonnet 4.6 model. The Opus model exists for more heavy duty work
 | Uncached input                          | 146       |
 
 <img width="561" height="290" alt="Screenshot 2026-05-05 at 19 04 09" src="https://github.com/user-attachments/assets/2c70f835-6f53-4440-b931-5787564d4a80" />
+
 
 The large 'cache reads' figure reflects how Claude Code works: the full project context is re-sent on each interaction, but repeated context is served from the cache at a lower cost. The session used 27% of my usage limit on the Pro plan. This is pretty reasonable for a project of this size, and I'm happy that I won't need to upgrade any time soon!
 
