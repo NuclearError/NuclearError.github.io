@@ -163,11 +163,15 @@ body {
     }
 
     & p {
-      margin: 10px 0 0;
+      margin: 10px 0 20px;
 
       & a {
         color: var(--vibrant-pink)
       }
+    }
+
+    & img {
+      width: 100%;
     }
   }
 }
