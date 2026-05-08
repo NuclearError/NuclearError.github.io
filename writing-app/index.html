@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline Writing App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="main">
+    <section class="controls">
+
+      <div class="timerInputContainer">
+        <label for="timerInput">Time (minutes)</label>
+        <input type="number" id="timerInput" value="5"></input>
+        <button id="startButton">Start 📝</button>
+      </div>
+      <button id="copyButton">Copy 📋</button>
+      <button id="resetButton">Reset 🔄</button>
+    </section>
+    <header>
+      <h1>You can do it! 💪
+        <div id="victoryMessage">
+          Congratulations! You wrote <span id="wordCount"></span> words!
+        </div>
+      </h1>
+      <div class="clock">
+        <h2 id="timer">Time remaining: <span id="timeDisplay"></span></h2>
+      </div>
+    </header>
+    <textarea id="writingArea" placeholder="Start writing..."></textarea>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
