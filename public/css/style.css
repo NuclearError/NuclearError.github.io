@@ -2,10 +2,8 @@
 
 .wrapper {
   margin: 0;
-}
 
-@media (min-width: 480px) {
-  .wrapper {
+  @media (min-width: 480px) {
     margin: 45px auto 0;
     width: 340px;
   }
@@ -18,144 +16,136 @@
   color: #000036;
   background-color: #00f8fb;
   border-radius: 2px;
-}
 
-.business-card h1,
-.business-card h2,
-.business-card h3 {
-  margin: 0;
-  font-weight: normal;
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-}
+  & h1,
+  & h2,
+  & h3 {
+    margin: 0;
+    font-weight: normal;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  }
 
-.business-card h1 {
-  font-size: 30px;
-  line-height: 45px;
-}
+  & h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-.business-card h2 {
-  font-size: 26px;
-  line-height: 45px;
-}
+  & h2 {
+    font-size: 26px;
+    line-height: 45px;
+  }
 
-.business-card h3 {
-  font-size: 19px;
-  line-height: 40px;
+  & h3 {
+    font-size: 19px;
+    line-height: 40px;
+  }
 }
 
 /* ── Contact links ───────────────────────────────────── */
 
 .contact-links {
   padding: 22.5px 0;
-}
 
-.contact-links ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-.contact-links li {
-  padding-left: 22.5px;
-  display: inline-block;
-}
+    & li {
+      display: inline-block;
+    }
+  }
 
-.contact-links li:first-child {
-  padding-left: 0;
-}
-
-@media (min-width: 480px) {
-  .contact-links {
+  @media (min-width: 480px) {
     padding: 7.5px 0;
+
+    & li {
+      display: block;
+    }
+
+    & [class^="icon-"]:before,
+    & [class*=" icon-"]:before {
+      margin-right: 15px;
+    }
   }
 
-  .contact-links li {
-    padding-left: 0;
-    display: block;
+  a {
+    color: #000036;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #eb1653;
+    }
   }
 
-  .contact-links [class^="icon-"]:before,
-  .contact-links [class*=" icon-"]:before {
-    margin-right: 15px;
+  & .icon {
+    font-size: 30px;
+    line-height: 30px;
   }
-}
-
-.contact-links a {
-  color: #000036;
-  text-decoration: none;
-}
-
-.contact-links a:hover,
-.contact-links a:focus,
-.contact-links a:active {
-  color: #eb1653;
-}
-
-.contact-links .icon {
-  font-size: 30px;
-  line-height: 30px;
 }
 
 /* ── Showcase ────────────────────────────────────────── */
 
-.showcase ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+.showcase {
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
-.showcase li {
-  margin: 15px 0;
-  padding: 0;
-}
-
-.showcase-item {
-  border-radius: 2px;
-  padding: 15px;
-}
-
-.showcase-item h3 {
-  margin: 0;
-  font-weight: normal;
-  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-size: 19px;
-  line-height: 40px;
-  position: relative;
-}
-
-.showcase-item a {
-  color: #000036;
-  text-decoration: none;
-}
-
-.showcase-item a:hover,
-.showcase-item a:focus,
-.showcase-item a:active {
-  color: #eb1653;
-}
-
-.showcase-item .emoji {
-  font-size: 40px;
-  vertical-align: top;
-  position: relative;
-  top: 5px;
-  right: 5px;
-}
-
-.showcase-item .title {
-  vertical-align: top;
-  position: absolute;
-  line-height: 22px;
-}
-
-@media (min-width: 480px) {
-  .showcase-item .title {
-    line-height: 40px;
+    & li {
+      margin: 15px 0;
+      padding: 0;
+    }
   }
-}
 
-.showcase-item p {
-  margin: 10px 0 0;
+  & .showcase-item {
+    border-radius: 2px;
+    padding: 15px;
+
+    & h3 {
+      margin: 0;
+      font-weight: normal;
+      font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 40px;
+      position: relative;
+    }
+
+    & a {
+      color: #000036;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #eb1653;
+      }
+    }
+
+    & .emoji {
+      font-size: 40px;
+      vertical-align: top;
+      position: relative;
+      top: 5px;
+      right: 5px;
+    }
+
+    & .title {
+      vertical-align: top;
+      position: absolute;
+      line-height: 22px;
+
+      @media (min-width: 480px) {
+        line-height: 40px;
+      }
+    }
+
+    & p {
+      margin: 10px 0 0;
+    }
+  }
 }
 
 /* ── Accessibility ───────────────────────────────────── */
